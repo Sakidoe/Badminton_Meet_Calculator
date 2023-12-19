@@ -1,0 +1,429 @@
+{
+   "UCSC": {
+      "MD": {
+         "Rank 1.0": {
+            "Player Name": [
+               "Brian Huang",
+               "Sam Lai"
+            ]
+         },
+         "Rank 2.0": {
+            "Player Name": [
+               "Eric Wang",
+               "Brandon Wang"
+            ]
+         },
+         "Rank 3.0": {
+            "Player Name": [
+               "Allan Sun",
+               "Suneet Katrekar"
+            ]
+         },
+         "Rank 4.0": {
+            "Player Name": [
+               "Curtis Luu",
+               "Akhilesh Nidamanuri"
+            ]
+         },
+         "Rank 5.0": {
+            "Player Name": [
+               "Yash Malegaonkar",
+               "Nathan Nguyen"
+            ]
+         },
+         "Rank 6.0": {
+            "Player Name": [
+               "Andrew Ryu",
+               "Nathan Mei"
+            ]
+         },
+         "Rank 7.0": {
+            "Player Name": [
+               "Shak Guruswami",
+               "Dustin Wang"
+            ]
+         },
+         "Rank 8.0": {
+            "Player Name": [
+               "Adam Vu ",
+               "Justin Yi"
+            ]
+         },
+         "Rank 9.0": {
+            "Player Name": [
+               "Bruce Bai",
+               "Van Ly"
+            ]
+         },
+         "Rank 10.0": {
+            "Player Name": [
+               "Curtis Luu",
+               "Akhilesh Nidamanuri"
+            ]
+         }
+      },
+      "MS": {
+         "Rank 1.0": {
+            "Player Name": [
+               "Sam Lai"
+            ]
+         },
+         "Rank 2.0": {
+            "Player Name": [
+               "Allan Sun"
+            ]
+         },
+         "Rank 3.0": {
+            "Player Name": [
+               "Evan Chen"
+            ]
+         },
+         "Rank 4.0": {
+            "Player Name": [
+               "Eric Wang"
+            ]
+         },
+         "Rank 5.0": {
+            "Player Name": [
+               "Anish Bansel"
+            ]
+         },
+         "Rank 6.0": {
+            "Player Name": [
+               "Suneet Katrekar"
+            ]
+         },
+         "Rank 7.0": {
+            "Player Name": [
+               "Aidan Au Yeung"
+            ]
+         },
+         "Rank 8.0": {
+            "Player Name": [
+               "Andrew Ryu"
+            ]
+         },
+         "Rank 9.0": {
+            "Player Name": [
+               "Nathan Mei"
+            ]
+         },
+         "Rank 10.0": {
+            "Player Name": [
+               "Nathan Yu"
+            ]
+         },
+         "Rank 11.0": {
+            "Player Name": [
+               "Yash Malegaonkar"
+            ]
+         },
+         "Rank 12.0": {
+            "Player Name": [
+               "Nathan Nguyen"
+            ]
+         }
+      },
+      "XD": {
+         "Rank 1.0": {
+            "Player Name": [
+               "Evan Chen",
+               "Sarah Chun"
+            ]
+         },
+         "Rank 2.0": {
+            "Player Name": [
+               "Sam Lai",
+               "Hannah Wang"
+            ]
+         },
+         "Rank 3.0": {
+            "Player Name": [
+               "Brian Huang",
+               "Amy Sha"
+            ]
+         },
+         "Rank 4.0": {
+            "Player Name": [
+               "Curtis Luu ",
+               "Emily Lam"
+            ]
+         },
+         "Rank 5.0": {
+            "Player Name": [
+               "Brandon Wang",
+               "Natasha Kulkarni"
+            ]
+         },
+         "Rank 6.0": {
+            "Player Name": [
+               "Shak Guruswami",
+               "Vara Madem"
+            ]
+         },
+         "Rank 7.0": {
+            "Player Name": [
+               "Akhilesh Nidamanuri",
+               "Jennifer Kim"
+            ]
+         },
+         "Rank 8.0": {
+            "Player Name": [
+               "William Wu",
+               "Jenny Lei"
+            ]
+         },
+         "Rank 9.0": {
+            "Player Name": [
+               "Julius Chang",
+               "Dorothy Li"
+            ]
+         },
+         "Rank 10.0": {
+            "Player Name": [
+               "Brandon Wang",
+               "Natasha Kulkarni"
+            ]
+         }
+      },
+      "WS": {
+         "Rank 1.0": {
+            "Player Name": [
+               "Amy Sha"
+            ]
+         },
+         "Rank 2.0": {
+            "Player Name": [
+               "Sarah Chun"
+            ]
+         },
+         "Rank 3.0": {
+            "Player Name": [
+               "Natasha Kulkarni"
+            ]
+         },
+         "Rank 4.0": {
+            "Player Name": [
+               "Jenny Lei"
+            ]
+         },
+         "Rank 5.0": {
+            "Player Name": [
+               "Dorothy Li"
+            ]
+         }
+      },
+      "WD": {
+         "Rank 1.0": {
+            "Player Name": [
+               "Sarah Chun",
+               "Hannah Wang"
+            ]
+         },
+         "Rank 2.0": {
+            "Player Name": [
+               "Natasha Kulkarni",
+               "Vara Madem"
+            ]
+         },
+         "Rank 3.0": {
+            "Player Name": [
+               "Emily Lam",
+               "Jennifer Kim"
+            ]
+         },
+         "Rank 4.0": {
+            "Player Name": [
+               "Dorothy Li",
+               "Hazel Chen"
+            ]
+         },
+         "Rank 5.0": {
+            "Player Name": [
+               "Jenny Lei",
+               "Iris Chan"
+            ]
+         }
+      }
+   },
+   "UCD": {
+      "MD": {
+         "Rank 1.0": {
+            "Player Name": [
+               "Richard Huang",
+               "Robert Chang"
+            ]
+         },
+         "Rank 2.0": {
+            "Player Name": [
+               "Kevin Cuan",
+               "Jeremy Leung"
+            ]
+         },
+         "Rank 3.0": {
+            "Player Name": [
+               "Sidney Wang",
+               "Bo Yan"
+            ]
+         },
+         "Rank 4.0": {
+            "Player Name": [
+               "Ethan Chan",
+               "Anthony Ngo"
+            ]
+         },
+         "Rank 5.0": {
+            "Player Name": [
+               "Adrian Lam",
+               "Jon Moser"
+            ]
+         },
+         "Rank 6.0": {
+            "Player Name": [
+               "Geoffrey Ku",
+               "Vo Ly"
+            ]
+         }
+      },
+      "MS": {
+         "Rank 1.0": {
+            "Player Name": [
+               "Kevin Cuan"
+            ]
+         },
+         "Rank 2.0": {
+            "Player Name": [
+               "Robert Chang"
+            ]
+         },
+         "Rank 3.0": {
+            "Player Name": [
+               "Justin Liu"
+            ]
+         },
+         "Rank 4.0": {
+            "Player Name": [
+               "Neil Patel"
+            ]
+         },
+         "Rank 5.0": {
+            "Player Name": [
+               "Jon Moser"
+            ]
+         },
+         "Rank 6.0": {
+            "Player Name": [
+               "Sidney Wang"
+            ]
+         },
+         "Rank 7.0": {
+            "Player Name": [
+               "Ethan Chan"
+            ]
+         },
+         "Rank 8.0": {
+            "Player Name": [
+               "Jeff Cheung"
+            ]
+         },
+         "Rank 9.0": {
+            "Player Name": [
+               "Ethan Chen"
+            ]
+         }
+      },
+      "XD": {
+         "Rank 1.0": {
+            "Player Name": [
+               "Robert Chang",
+               "Xin Huang"
+            ]
+         },
+         "Rank 2.0": {
+            "Player Name": [
+               "Steffi Ling",
+               "Kevin Cuan"
+            ]
+         },
+         "Rank 3.0": {
+            "Player Name": [
+               "Claudia Xu",
+               "Jeremy Leung"
+            ]
+         },
+         "Rank 4.0": {
+            "Player Name": [
+               "Joy Yang",
+               "Justin Liu"
+            ]
+         },
+         "Rank 5.0": {
+            "Player Name": [
+               "Stephanie Lau",
+               "Anthony Ngo"
+            ]
+         },
+         "Rank 6.0": {
+            "Player Name": [
+               "Collette Shu",
+               "Ethan Chen"
+            ]
+         },
+         "Rank 7.0": {
+            "Player Name": [
+               "Joey Mai",
+               "Geoffrey Ku"
+            ]
+         },
+         "Rank 8.0": {
+            "Player Name": [
+               "Richard Huang",
+               "Amber Zhang"
+            ]
+         }
+      },
+      "WS": {
+         "Rank 1.0": {
+            "Player Name": [
+               "Xin Huang"
+            ]
+         },
+         "Rank 2.0": {
+            "Player Name": [
+               "Joy Yang"
+            ]
+         },
+         "Rank 3.0": {
+            "Player Name": [
+               "Cindy Shing"
+            ]
+         }
+      },
+      "WD": {
+         "Rank 1.0": {
+            "Player Name": [
+               "Xin Huang",
+               "Steffi Ling"
+            ]
+         },
+         "Rank 2.0": {
+            "Player Name": [
+               "Iris Lee",
+               "Claudia Xu"
+            ]
+         },
+         "Rank 3.0": {
+            "Player Name": [
+               "Aysia Saeturn",
+               "Diana Del Rosario"
+            ]
+         },
+         "Rank 4.0": {
+            "Player Name": [
+               "Joey Mai",
+               "Amie Zheng"
+            ]
+         }
+      }
+   }
+}

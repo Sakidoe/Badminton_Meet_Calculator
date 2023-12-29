@@ -148,8 +148,8 @@ def XlsxMake(final_schedule, team1, team2):
                 worksheet.merge_range(team1_cell, str(team1_data), data_blue)
                 worksheet.merge_range(team2_cell, str(team2_data), data_blue)
                 worksheet.merge_range(score_cell, "",data_yellow)
-                worksheet.write(victory_cell_t1, 1, data_blue)
-                worksheet.write(victory_cell_t2, 1, data_blue)
+                worksheet.write(victory_cell_t1, 0, data_blue)
+                worksheet.write(victory_cell_t2, 0, data_blue)
                 worksheet.write(court_cell, c_number, data_blue)
                 team1_OTeam.append("L" + str(i))
                 team2_OTeam.append("M" + str(i))
@@ -432,8 +432,8 @@ def addPlayer(Meet, team_name, players):
             else:
                  Meet[curr_event][json_rank_text]["Player Name"].append(name)
         i+=1
-
-
+    print("successfully created roster")
+    
 
 teams = [] # a list of teams.
 teamNumber = input("//PROGRAM START\\\ \nHow many teams are there in this meet?")

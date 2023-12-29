@@ -1,7 +1,7 @@
 # Badminton_Meet_Calculator
   This is a university badminton meet calculator that creates an interactive .XLSX file from parameters and team rosters inputted by the user, by Richard Huang.
 # Instructions
-# initial comments :
+# Initial Comments :
   This program only requires save.txt, schedule.txt, app.py, and result.xlsx. Json_Team_Parser.py is only useful for creating rosters, Json_Schedule_Parser.py
   is only useful for making schedule.txt from an inputted json file, and XLSX_Parser.py creates a result.txt from an inputted json files, as backups for app.py.
 # 1.

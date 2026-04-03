@@ -1,459 +1,396 @@
 import xlsxwriter
 final_schedule = {
-   "11:00": {
+   "10:30": {
       "1": [
-         "WS3",
-         [
-            "Cindy Shing"
-         ],
-         [
-            "Natasha Kulkarni"
-         ]
-      ],
-      "2": [
-         "XD3",
-         [
-            "Claudia Xu",
-            "Jeremy Leung"
-         ],
-         [
-            "Brian Huang",
-            "Amy Sha"
-         ]
-      ],
-      "3": [
-         "MD1",
-         [
-            "Richard Huang",
-            "Robert Chang"
-         ],
-         [
-            "Brian Huang",
-            "Sam Lai"
-         ]
-      ],
-      "4": [
-         "WS4",
-         [
-            "Xin Huang"
-         ],
-         [
-            "Jenny Lei"
-         ]
-      ],
-      "5": [
          "WD3",
          [
-            "Aysia Saeturn",
-            "Diana Del Rosario"
+            "Aditi Kavipurapu",
+            "Muyen Liang"
          ],
          [
-            "Emily Lam",
-            "Jennifer Kim"
-         ]
-      ],
-      "6": [
-         "MD5",
-         [
-            "Adrian Lam",
-            "Jon Moser"
-         ],
-         [
-            "Yash Malegaonkar",
-            "Nathan Nguyen"
-         ]
-      ]
-   },
-   "11:30": {
-      "1": [
-         "WD2",
-         [
-            "Iris Lee",
-            "Claudia Xu"
-         ],
-         [
-            "Natasha Kulkarni",
-            "Vara Madem"
-         ]
-      ],
-      "2": [
-         "WD1",
-         [
-            "Xin Huang",
-            "Steffi Ling"
-         ],
-         [
-            "Sarah Chun",
-            "Hannah Wang"
-         ]
-      ],
-      "3": [
-         "MD3",
-         [
-            "Sidney Wang",
-            "Bo Yan"
-         ],
-         [
-            "Allan Sun",
-            "Suneet Katrekar"
-         ]
-      ],
-      "4": [
-         "XD7",
-         [
-            "Joey Mai",
-            "Geoffrey Ku"
-         ],
-         [
-            "Akhilesh Nidamanuri",
-            "Jennifer Kim"
-         ]
-      ],
-      "5": [
-         "MD2",
-         [
-            "Kevin Cuan",
-            "Jeremy Leung"
-         ],
-         [
-            "Eric Wang",
-            "Brandon Wang"
-         ]
-      ],
-      "6": [
-         "MS9",
-         [
-            "Ethan Chen"
-         ],
-         [
-            "Nathan Mei"
-         ]
-      ]
-   },
-   "12:00": {
-      "1": [
-         "WD5",
-         [
-            "Xin Huang",
-            "Steffi Ling"
-         ],
-         [
-            "Jenny Lei",
-            "Iris Chan"
-         ]
-      ],
-      "2": [
-         "MS3",
-         [
-            "Justin Liu"
-         ],
-         [
-            "Evan Chen"
-         ]
-      ],
-      "3": [
-         "WS2",
-         [
-            "Joy Yang"
-         ],
-         [
-            "Sarah Chun"
-         ]
-      ],
-      "4": [
-         "MD10",
-         [
-            "Ethan Chan",
-            "Anthony Ngo"
-         ],
-         [
-            "Curtis Luu",
-            "Akhilesh Nidamanuri"
-         ]
-      ],
-      "5": [
-         "MS11",
-         [
-            "Robert Chang"
-         ],
-         [
-            "Yash Malegaonkar"
-         ]
-      ],
-      "6": [
-         "WD4",
-         [
-            "Joey Mai",
-            "Amie Zheng"
-         ],
-         [
-            "Dorothy Li",
-            "Hazel Chen"
-         ]
-      ]
-   },
-   "12:30": {
-      "1": [
-         "MS2",
-         [
-            "Robert Chang"
-         ],
-         [
-            "Allan Sun"
-         ]
-      ],
-      "2": [
-         "MD6",
-         [
-            "Geoffrey Ku",
-            "Vo Ly"
-         ],
-         [
-            "Andrew Ryu",
-            "Nathan Mei"
-         ]
-      ],
-      "3": [
-         "WS1",
-         [
-            "Xin Huang"
-         ],
-         [
-            "Amy Sha"
-         ]
-      ],
-      "4": [
-         "XD1",
-         [
-            "Robert Chang",
-            "Xin Huang"
-         ],
-         [
-            "Evan Chen",
-            "Sarah Chun"
-         ]
-      ],
-      "5": [
-         "MD8",
-         [
-            "Kevin Cuan",
-            "Jeremy Leung"
-         ],
-         [
-            "Adam Vu ",
-            "Justin Yi"
-         ]
-      ],
-      "6": [
-         "XD8",
-         [
-            "Richard Huang",
-            "Amber Zhang"
-         ],
-         [
-            "William Wu",
-            "Jenny Lei"
-         ]
-      ]
-   },
-   "01:00": {
-      "1": [
-         "WS5",
-         [
-            "Joy Yang"
-         ],
-         [
-            "Dorothy Li"
+            "Daphne Huang",
+            "Rhea Zou"
          ]
       ],
       "2": [
          "XD2",
          [
-            "Steffi Ling",
-            "Kevin Cuan"
+            "Richard huang",
+            "Kristine Ngo"
          ],
          [
-            "Sam Lai",
-            "Hannah Wang"
+            "Ashton Lee",
+            "Amanda Ng"
          ]
       ],
       "3": [
-         "MD7",
+         "XD1",
          [
-            "Richard Huang",
-            "Robert Chang"
+            "Leyang Ding",
+            "Xin Huang"
          ],
          [
-            "Shak Guruswami",
-            "Dustin Wang"
+            "Adam Tay",
+            "Tara Chou"
          ]
       ],
       "4": [
-         "MS12",
+         "XD3",
          [
-            "Justin Liu"
+            "Robert Chang ",
+            "Erika Lai"
          ],
          [
-            "Nathan Nguyen"
+            "Vivan Sinha",
+            "Kristin Song"
          ]
       ],
       "5": [
-         "XD5",
+         "MD5",
          [
-            "Stephanie Lau",
-            "Anthony Ngo"
+            "Justin Larson",
+            "Samarth Sridhara"
          ],
          [
-            "Brandon Wang",
-            "Natasha Kulkarni"
+            "Howard Huang",
+            "Ray Sun"
          ]
       ],
       "6": [
-         "MS7",
+         "XD8",
          [
-            "Ethan Chan"
+            "Adrian Luo",
+            "Julie Ma"
          ],
          [
-            "Aidan Au Yeung"
+            "Rehadyan Utomo",
+            "Nadia Kho"
          ]
       ]
    },
-   "01:30": {
+   "11:15": {
       "1": [
-         "XD6",
+         "WS1",
          [
-            "Collette Shu",
-            "Ethan Chen"
+            "Erika Lai"
          ],
          [
-            "Shak Guruswami",
-            "Vara Madem"
+            "Tara Chou"
          ]
       ],
       "2": [
-         "MS1",
+         "MD1",
          [
-            "Kevin Cuan"
+            "Richard Huang",
+            "Jun Jie Lai"
          ],
          [
-            "Sam Lai"
+            "Adam Tay",
+            "Kevin Lan"
          ]
       ],
       "3": [
-         "MS5",
+         "XD7",
+         [
+            "Adrian Luo",
+            "Julie Ma"
+         ],
+         [
+            "Kyle Huang",
+            "Yvonne Wang"
+         ]
+      ],
+      "4": [
+         "MS7",
          [
             "Jon Moser"
          ],
          [
-            "Anish Bansel"
-         ]
-      ],
-      "4": [
-         "MD4",
-         [
-            "Ethan Chan",
-            "Anthony Ngo"
-         ],
-         [
-            "Curtis Luu",
-            "Akhilesh Nidamanuri"
+            "Thet Paing (David) Da Na"
          ]
       ],
       "5": [
-         "MS10",
+         "WD6",
          [
-            "Kevin Cuan"
+            "Aditi Kavipurapu",
+            "Muyen Liang"
          ],
          [
-            "Nathan Yu"
+            "Anni Zhang",
+            "Elaine Jiang"
          ]
       ],
       "6": [
-         "MS8",
+         "WS4",
          [
-            "Jeff Cheung"
+            "Elaine Tsou"
          ],
          [
-            "Andrew Ryu"
+            "Anjuli Oey"
          ]
       ]
    },
-   "02:00": {
+   "12:00": {
       "1": [
-         "XD4",
+         "MS2",
          [
-            "Joy Yang",
-            "Justin Liu"
+            "Leyang Ding"
          ],
          [
-            "Curtis Luu ",
-            "Emily Lam"
+            "Brad Chiu"
          ]
       ],
       "2": [
-         "XD10",
+         "MD3",
          [
-            "Steffi Ling",
-            "Kevin Cuan"
+            "Jon Moser",
+            "Kyle Fang"
          ],
          [
-            "Brandon Wang",
-            "Natasha Kulkarni"
+            "Patrick Chi",
+            "Ryan Zhu"
          ]
       ],
       "3": [
-         "MD9",
+         "XD6",
          [
-            "Sidney Wang",
-            "Bo Yan"
+            "Andy Li",
+            "Muyen"
          ],
          [
-            "Bruce Bai",
-            "Van Ly"
+            "Warren Chang",
+            "Ashley Zheng"
          ]
       ],
       "4": [
-         "XD9",
+         "XD4",
          [
-            "Robert Chang",
-            "Xin Huang"
+            "Claudia Xu",
+            "Andrew Yeow "
          ],
          [
-            "Julius Chang",
-            "Dorothy Li"
+            "Kevin Lan",
+            "Eileen Pan"
          ]
       ],
       "5": [
+         "MD9",
+         [
+            "Junru Su",
+            "Aaron Lim"
+         ],
+         [
+            "Leo Chen",
+            "Jackie Dai "
+         ]
+      ],
+      "6": [
          "MS4",
          [
             "Neil Patel"
          ],
          [
-            "Eric Wang"
-         ]
-      ],
-      "6": [
-         "MS6",
-         [
-            "Sidney Wang"
-         ],
-         [
-            "Suneet Katrekar"
+            "Ray Sun"
          ]
       ]
    },
-   "02:30": {},
-   "03:00": {},
-   "03:30": {},
-   "04:00": {},
-   "04:30": {},
-   "05:00": {},
-   "05:30": {}
+   "12:45": {
+      "1": [
+         "WD1",
+         [
+            "Joy Yang",
+            "Xin Huang"
+         ],
+         [
+            "Amanda Ng",
+            "Tara Chou"
+         ]
+      ],
+      "2": [
+         "MS3",
+         [
+            "Robert Chang"
+         ],
+         [
+            "Ryan Zhu"
+         ]
+      ],
+      "3": [
+         "MS1",
+         [
+            "Jun Jie Lai"
+         ],
+         [
+            "Patrick Chi"
+         ]
+      ],
+      "4": [
+         "MD11",
+         [
+            "Junru Su",
+            "Aaron Lim"
+         ],
+         [
+            "Rehadyan Utomo",
+            "Warren Chang"
+         ]
+      ],
+      "5": [
+         "WD5",
+         [
+            "Claudia Xu",
+            "Erika Lai"
+         ],
+         [
+            "Sarah Gao",
+            "Fiona Chen"
+         ]
+      ],
+      "6": [
+         "MD4",
+         [
+            "Vo Ly",
+            "Brandon Leung"
+         ],
+         [
+            "Cameron Kato",
+            "Harsh Srivastav"
+         ]
+      ]
+   },
+   "01:30": {
+      "1": [
+         "WS2",
+         [
+            "Joy Yang"
+         ],
+         [
+            "Ashley Huang"
+         ]
+      ],
+      "2": [
+         "WS3",
+         [
+            "Kristine Ngo"
+         ],
+         [
+            "Rosamund Li"
+         ]
+      ],
+      "3": [
+         "MS6",
+         [
+            "Kyle Fang"
+         ],
+         [
+            "Brandon Wu"
+         ]
+      ],
+      "4": [
+         "MD10",
+         [
+            "Neil Patel",
+            "Andrew Yeow"
+         ],
+         [
+            "Arav Sachdeva",
+            "Aarav Singh"
+         ]
+      ],
+      "5": [
+         "MD6",
+         [
+            "Jonathan Li",
+            "Sean Tan"
+         ],
+         [
+            "Edwin Tang",
+            "Jonathon Cheng"
+         ]
+      ],
+      "6": [
+         "MD2",
+         [
+            "Leyang Ding",
+            "Robert Chang"
+         ],
+         [
+            "Ashton Lee",
+            "Vivan Sinha"
+         ]
+      ]
+   },
+   "02:15": {
+      "1": [
+         "MS5",
+         [
+            "Andrew Yeow"
+         ],
+         [
+            "Jackie Dai "
+         ]
+      ],
+      "2": [
+         "WD2",
+         [
+            "Claudia Xu",
+            "Erika Lai"
+         ],
+         [
+            "Ashley Huang",
+            "Kristin Song"
+         ]
+      ],
+      "3": [
+         "WD4",
+         [
+            "Julie La",
+            "Khanh Tran"
+         ],
+         [
+            "Eileen Pan",
+            "Alicia Wang"
+         ]
+      ],
+      "4": [
+         "MD8",
+         [
+            "Andy Li",
+            "Jason Wu"
+         ],
+         [
+            "Anton Luu",
+            "Justin Wang "
+         ]
+      ],
+      "5": [
+         "XD5",
+         [
+            "Aditi Kavipurapu",
+            "Ken Sibal"
+         ],
+         [
+            "Randy Huang",
+            "Rhea Zou"
+         ]
+      ],
+      "6": [
+         "MD7",
+         [
+            "Bill Wong",
+            "Donald Ly"
+         ],
+         [
+            "Evan Wang",
+            "Brandon Wu"
+         ]
+      ]
+   },
+   "03:00": {}
 }
 # remember to adapt this later
 team1 = "UCD"
 team2 = "UCSC"
-conflicts = {'01:00': ['Sarah Chun', 'Jenny Lei'], '02:00': ['Natasha Kulkarni']}
 def conflictCheck(final_schedule, conflicts):
     for i in final_schedule:
         on_court = set()
@@ -510,79 +447,83 @@ worksheet.set_column("H:I", 20)
 meet_title_format = workbook.add_format(
     {
         "bold": 1,
-        "underline" : 1,
+        "underline": 1,
         "border": 1,
         "align": "center",
         "valign": "vcenter",
         "fg_color": "#FFD24C",
-        "font" : "montserrat",
-        "size" : 22,
-         
+        "font_name": "montserrat",
+        "font_size": 22,
     }
 )
+
 categories = workbook.add_format( 
     {   
         "bold": 1,
         "border": 1,
         "align": "center",
         "valign": "vcenter",
-        "color" : "#FFFFFF",
+        "font_color": "#FFFFFF",
         "fg_color": "#355B85",
-        "font" : "montserrat",
-        "size" : 10,
-        "bottom" : 6,
-        }
-)
-data_blue = workbook.add_format(
-    {
-      "font" : "montserrat",
-      "align": "center",
-      "size" : 10,
-      "border": 1,
-      "fg_color": "#B3C1D1",
-     }
-)
-data_yellow = workbook.add_format(
-    {
-      "font" : "montserrat",
-      "align": "center",
-      "size" : 10,
-      "border": 1,
-      "fg_color": "#FFDF80",
-     }
-)
-data_black = workbook.add_format(
-    {
-      "font" : "montserrat",
-      "align": "center",
-      "size" : 10,
-      "border": 1,
-      "bold" : 1,
-      "color" : "#FFFFFF",
-      "fg_color": "#333333",
-     }
-)
-data_red = workbook.add_format(
-    {
-      "font" : "montserrat",
-      "align": "center",
-      "size" : 10,
-      "border": 1,
-      "bold" : 1,
-      "color" : "#FFFFFF",
-      "fg_color": "#79242F",
-     }
-)
-data_grey = workbook.add_format(
-    {
-      "font" : "montserrat",
-      "align": "center",
-      "size" : 10,
-      "border": 1,
-      "fg_color": "#CCCCCC",
-     }
+        "font_name": "montserrat",
+        "font_size": 10,
+        "bottom": 6,
+    }
 )
 
+data_blue = workbook.add_format(
+    {
+        "font_name": "montserrat",
+        "align": "center",
+        "font_size": 10,
+        "border": 1,
+        "fg_color": "#B3C1D1",
+    }
+)
+
+data_yellow = workbook.add_format(
+    {
+        "font_name": "montserrat",
+        "align": "center",
+        "font_size": 10,
+        "border": 1,
+        "fg_color": "#FFDF80",
+    }
+)
+
+data_black = workbook.add_format(
+    {
+        "font_name": "montserrat",
+        "align": "center",
+        "font_size": 10,
+        "border": 1,
+        "bold": 1,
+        "font_color": "#FFFFFF",
+        "fg_color": "#333333",
+    }
+)
+
+data_red = workbook.add_format(
+    {
+        "font_name": "montserrat",
+        "align": "center",
+        "font_size": 10,
+        "border": 1,
+        "bold": 1,
+        "font_color": "#FFFFFF",
+        "fg_color": "#79242F",
+    }
+)
+
+data_grey = workbook.add_format(
+    {
+        "font_name": "montserrat",
+        "align": "center",
+        "font_size": 10,
+        "border": 1,
+        "fg_color": "#CCCCCC",
+    }
+)
 worksheet.merge_range("A1:K4", title, meet_title_format)
 
 worksheet.write('A5', 'Schedule', categories)

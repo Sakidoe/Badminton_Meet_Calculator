@@ -20,16 +20,23 @@ def get_key():
         ch = sys.stdin.read(1)
         # Handle arrow keys (they send 3 characters)
         if ch == '\x1b':
-            ch = sys.stdin.read(2)
-            if ch == '[A':
+            next_chars = sys.stdin.read(2)
+            if next_chars == '[A':
                 return 'UP'
-            elif ch == '[B':
+            elif next_chars == '[B':
                 return 'DOWN'
-        elif ch == '\r' or ch == '\n':
+            return None
+        elif ch == '\r':  # Carriage return
+            return 'ENTER'
+        elif ch == '\n':  # Newline
+            return 'ENTER'
+        elif ch == ' ':  # Spacebar as alternative
             return 'ENTER'
         elif ch == '\x03':  # Ctrl+C
             return 'QUIT'
-        return ch
+        elif ch == 'q' or ch == 'Q':  # Q to quit
+            return 'QUIT'
+        return None
     finally:
         termios.tcsetattr(fd, termios.TCSADRAIN, old_settings)
 
@@ -75,8 +82,7 @@ def addPlayer(Meet, team_name, players):
 def menu():
     options = [
         ("Add Roster", "A"),
-        ("View Roster", "V"),
-        ("Save Changes", "S"),
+        ("Save", "S"),
         ("Make Meet", "M"),
         ("Terminate", "X")
     ]
@@ -91,18 +97,14 @@ def menu():
     print(f"\n  Use ↑/↓ arrows to navigate, Enter to select\n")
     print("  " + "-"*46)
     
-    # Save cursor position (after the separator line)
-    print("\033[s", end='')  # Save cursor position
-    
     def draw_menu():
         """Redraw the menu options."""
-        print("\033[u", end='')  # Restore cursor position
         for i, (option, command) in enumerate(options):
             if i == selected:
-                print(f"\r  {BOLD}→ {option:<28}{END} {BOLD}[{command}]{END}\033[K")  # \033[K clears to end of line
+                print(f"  {BOLD}→ {option:<28}{END} {BOLD}[{command}]{END}")
             else:
-                print(f"\r    {option:<28} [{command}]\033[K")
-        print(f"  {'-'*46}\033[K")
+                print(f"    {option:<28} [{command}]")
+        print(f"  {'-'*46}")
         sys.stdout.flush()
     
     # Draw initial menu
@@ -113,19 +115,24 @@ def menu():
         
         if key == 'UP':
             selected = (selected - 1) % num_options
+            # Move cursor up to redraw menu (num_options + 1 for separator line)
+            print(f"\033[{num_options + 1}A", end='')
             draw_menu()
             
         elif key == 'DOWN':
             selected = (selected + 1) % num_options
+            # Move cursor up to redraw menu
+            print(f"\033[{num_options + 1}A", end='')
             draw_menu()
             
         elif key == 'ENTER':
-            print()  # New line before returning
-            return options[selected][1]  # Return the command letter
+            print("\n")  # Add some space before returning
+            return options[selected][1]  # Return the command number
             
         elif key == 'QUIT':
-            print()
-            return 'X'
+            print("\n")
+            return '3'  # Return terminate option
+        
 
 def saveSchedule(Meet):
     json_format = json.dumps(Meet, indent=3)
@@ -157,12 +164,15 @@ players = dict() # a dictionary of players relevant to each team.
 Meet = dict()
 #/----------
 #Initial Print Statement
-print("\n\n_______________________________________________________________\n\n" +
-      f"{BOLD}Welcome to the Badminton Meet Maker, by Richard Huang and BUCD!{END}\n" +
-          "_______________________________________________________________\n")
-print("This program is designed to help create a 1v1 school badminton meet, \n" \
-"generating a conflict-free .xslx file for users. Just answer the prompts, \n" \
-"then follow the instructions.")
+print("\n")
+print("="*65)
+print(f"{BOLD}{'BADMINTON MEET MAKER':^65}{END}")
+print(f"{'by Richard Huang and BUCD':^65}")
+print("="*65)
+print("\n" + " "*5 + "This program is designed to help create a 1v1 school badminton")
+print(" "*5 + "meet, generating a conflict-free .xlsx file for users.")
+print(" "*5 + "Just answer the prompts and follow the instructions.")
+print("\n" + "="*65 + "\n")
 #\----------
 for i in range(1,3):
     print("_______________________________________________________________")

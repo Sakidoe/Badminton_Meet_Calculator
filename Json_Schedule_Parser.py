@@ -4,393 +4,604 @@ from datetime import datetime, timedelta
 from pandas import DataFrame
 import random
 Meet = {
-   "10:30": {
-      "1": [
-         "WD3",
-         [
-            "Aditi Kavipurapu",
-            "Muyen Liang"
-         ],
-         [
-            "Daphne Huang",
-            "Rhea Zou"
-         ]
-      ],
-      "2": [
-         "XD2",
-         [
-            "Richard huang",
-            "Kristine Ngo"
-         ],
-         [
-            "Ashton Lee",
-            "Amanda Ng"
-         ]
-      ],
-      "3": [
-         "XD1",
-         [
-            "Leyang Ding",
-            "Xin Huang"
-         ],
-         [
-            "Adam Tay",
-            "Tara Chou"
-         ]
-      ],
-      "4": [
-         "XD3",
-         [
-            "Robert Chang ",
-            "Erika Lai"
-         ],
-         [
-            "Vivan Sinha",
-            "Kristin Song"
-         ]
-      ],
-      "5": [
-         "MD5",
-         [
-            "Justin Larson",
-            "Samarth Sridhara"
-         ],
-         [
-            "Howard Huang",
-            "Ray Sun"
-         ]
-      ],
-      "6": [
-         "XD8",
-         [
-            "Adrian Luo",
-            "Julie Ma"
-         ],
-         [
-            "Rehadyan Utomo",
-            "Nadia Kho"
-         ]
-      ]
+   "UCD": {
+      "MD": {
+         "Rank 1": {
+            "Player Name": [
+               "Leyang Ding",
+               "Richard Huang"
+            ]
+         },
+         "Rank 2": {
+            "Player Name": [
+               "Benson Ngai",
+               "Geoffray Lee"
+            ]
+         },
+         "Rank 3": {
+            "Player Name": [
+               "Jon Moser",
+               "Jonathan Li"
+            ]
+         },
+         "Rank 4": {
+            "Player Name": [
+               "Sidney Wang",
+               "Adrian Luo"
+            ]
+         },
+         "Rank 5": {
+            "Player Name": [
+               "Mariano Elizondo",
+               "Jerry Qiu"
+            ]
+         },
+         "Rank 6": {
+            "Player Name": [
+               "Sean Tan",
+               "Kevin Cuan"
+            ]
+         },
+         "Rank 7": {
+            "Player Name": [
+               "Aaron Lim",
+               "Bill Wong"
+            ]
+         },
+         "Rank 8": {
+            "Player Name": [
+               "Daniel Lin",
+               "Yawei He"
+            ]
+         },
+         "Rank 9": {
+            "Player Name": [
+               "Jordon Kwong",
+               "Chimnay"
+            ]
+         },
+         "Rank 10": {
+            "Player Name": [
+               "Michael Salim",
+               "Kyle Kimura"
+            ]
+         },
+         "Rank 11": {
+            "Player Name": [
+               "Ryan Lei",
+               "Adrian Luu"
+            ]
+         },
+         "Rank 12": {
+            "Player Name": [
+               "Josh Luo",
+               "Karthik Villavan"
+            ]
+         },
+         "Rank 13": {
+            "Player Name": [
+               "Marc Ethan Saguiped",
+               "Donnovan Saelee"
+            ]
+         }
+      },
+      "MS": {
+         "Rank 1": {
+            "Player Name": [
+               "Leyang Ding"
+            ]
+         },
+         "Rank 2": {
+            "Player Name": [
+               "Kevin Cuan"
+            ]
+         },
+         "Rank 3": {
+            "Player Name": [
+               "Mariano Elizondo"
+            ]
+         },
+         "Rank 4": {
+            "Player Name": [
+               "Geoffray Lee"
+            ]
+         },
+         "Rank 5": {
+            "Player Name": [
+               "Jon Moser"
+            ]
+         },
+         "Rank 6": {
+            "Player Name": [
+               "Adrian Luo"
+            ]
+         },
+         "Rank 7": {
+            "Player Name": [
+               "Sidney Wang"
+            ]
+         },
+         "Rank 8": {
+            "Player Name": [
+               "Jonathan Li"
+            ]
+         },
+         "Rank 9": {
+            "Player Name": [
+               "Sean Tan"
+            ]
+         },
+         "Rank 10": {
+            "Player Name": [
+               "Aaron Lim"
+            ]
+         },
+         "Rank 11": {
+            "Player Name": [
+               "Adrian Li"
+            ]
+         },
+         "Rank 12": {
+            "Player Name": [
+               "Kyle Kimura"
+            ]
+         },
+         "Rank 13": {
+            "Player Name": [
+               "Michael Salim"
+            ]
+         },
+         "Rank 14": {
+            "Player Name": [
+               "Bill Wong"
+            ]
+         },
+         "Rank 15": {
+            "Player Name": [
+               "Finn"
+            ]
+         },
+         "Rank 16": {
+            "Player Name": [
+               "Booker Brown"
+            ]
+         }
+      },
+      "XD": {
+         "Rank 1": {
+            "Player Name": [
+               "Leyang Ding",
+               "Xin Huang"
+            ]
+         },
+         "Rank 2": {
+            "Player Name": [
+               "Benson Ngai",
+               "Kristine Ngo"
+            ]
+         },
+         "Rank 3": {
+            "Player Name": [
+               "Kevin Cuan",
+               "Iris Lee"
+            ]
+         },
+         "Rank 4": {
+            "Player Name": [
+               "Richard Huang",
+               "Erika Lai"
+            ]
+         },
+         "Rank 5": {
+            "Player Name": [
+               "Sidney Wang",
+               "Betty Yang"
+            ]
+         },
+         "Rank 6": {
+            "Player Name": [
+               "Adam Dinh",
+               "Minh Nguyen"
+            ]
+         },
+         "Rank 7": {
+            "Player Name": [
+               "Jonathan Li",
+               "Ehong Ng"
+            ]
+         },
+         "Rank 8": {
+            "Player Name": [
+               "Ryan Lei",
+               "Jamie Yip"
+            ]
+         },
+         "Rank 9": {
+            "Player Name": [
+               "Adrian Li",
+               "Isabella Li"
+            ]
+         },
+         "Rank 10": {
+            "Player Name": [
+               "Richard Huang",
+               "Livia Rice"
+            ]
+         },
+         "Rank 11": {
+            "Player Name": [
+               "Aaron Lim",
+               "Gaby Solei"
+            ]
+         },
+         "Rank 12": {
+            "Player Name": [
+               "Daniel Lin",
+               "Carolyn Surypermana"
+            ]
+         },
+         "Rank 13": {
+            "Player Name": [
+               "Booker Brown",
+               "Chonticha Phanphanit"
+            ]
+         },
+         "Rank 14": {
+            "Player Name": [
+               "Jerry Qiu",
+               "Suhani Shokeen"
+            ]
+         }
+      },
+      "WS": {
+         "Rank 1": {
+            "Player Name": [
+               "Jamie Yip"
+            ]
+         },
+         "Rank 2": {
+            "Player Name": [
+               "Carolyn Suryapermana"
+            ]
+         },
+         "Rank 3": {
+            "Player Name": [
+               "Chonticha Phanphanit"
+            ]
+         }
+      },
+      "WD": {
+         "Rank 1": {
+            "Player Name": [
+               "Xin Huang",
+               "Betty Yang"
+            ]
+         },
+         "Rank 2": {
+            "Player Name": [
+               "Kristine Ngo",
+               "Erika Lai"
+            ]
+         },
+         "Rank 3": {
+            "Player Name": [
+               "Muyen Liang",
+               "Jamie Yip"
+            ]
+         },
+         "Rank 4": {
+            "Player Name": [
+               "Livia Rice",
+               "Isabella Li"
+            ]
+         },
+         "Rank 5": {
+            "Player Name": [
+               "Winnie Wu",
+               "Mallika Chou"
+            ]
+         }
+      }
    },
-   "11:15": {
-      "1": [
-         "WS1",
-         [
-            "Erika Lai"
-         ],
-         [
-            "Tara Chou"
-         ]
-      ],
-      "2": [
-         "MD1",
-         [
-            "Richard Huang",
-            "Jun Jie Lai"
-         ],
-         [
-            "Adam Tay",
-            "Kevin Lan"
-         ]
-      ],
-      "3": [
-         "XD7",
-         [
-            "Adrian Luo",
-            "Julie Ma"
-         ],
-         [
-            "Kyle Huang",
-            "Yvonne Wang"
-         ]
-      ],
-      "4": [
-         "MS7",
-         [
-            "Jon Moser"
-         ],
-         [
-            "Thet Paing (David) Da Na"
-         ]
-      ],
-      "5": [
-         "WD6",
-         [
-            "Aditi Kavipurapu",
-            "Muyen Liang"
-         ],
-         [
-            "Anni Zhang",
-            "Elaine Jiang"
-         ]
-      ],
-      "6": [
-         "WS4",
-         [
-            "Elaine Tsou"
-         ],
-         [
-            "Anjuli Oey"
-         ]
-      ]
-   },
-   "12:00": {
-      "1": [
-         "MS2",
-         [
-            "Leyang Ding"
-         ],
-         [
-            "Brad Chiu"
-         ]
-      ],
-      "2": [
-         "MD3",
-         [
-            "Jon Moser",
-            "Kyle Fang"
-         ],
-         [
-            "Patrick Chi",
-            "Ryan Zhu"
-         ]
-      ],
-      "3": [
-         "XD6",
-         [
-            "Andy Li",
-            "Muyen"
-         ],
-         [
-            "Warren Chang",
-            "Ashley Zheng"
-         ]
-      ],
-      "4": [
-         "XD4",
-         [
-            "Claudia Xu",
-            "Andrew Yeow "
-         ],
-         [
-            "Kevin Lan",
-            "Eileen Pan"
-         ]
-      ],
-      "5": [
-         "MD9",
-         [
-            "Junru Su",
-            "Aaron Lim"
-         ],
-         [
-            "Leo Chen",
-            "Jackie Dai "
-         ]
-      ],
-      "6": [
-         "MS4",
-         [
-            "Neil Patel"
-         ],
-         [
-            "Ray Sun"
-         ]
-      ]
-   },
-   "12:45": {
-      "1": [
-         "WD1",
-         [
-            "Joy Yang",
-            "Xin Huang"
-         ],
-         [
-            "Amanda Ng",
-            "Tara Chou"
-         ]
-      ],
-      "2": [
-         "MS3",
-         [
-            "Robert Chang"
-         ],
-         [
-            "Ryan Zhu"
-         ]
-      ],
-      "3": [
-         "MS1",
-         [
-            "Jun Jie Lai"
-         ],
-         [
-            "Patrick Chi"
-         ]
-      ],
-      "4": [
-         "MD11",
-         [
-            "Junru Su",
-            "Aaron Lim"
-         ],
-         [
-            "Rehadyan Utomo",
-            "Warren Chang"
-         ]
-      ],
-      "5": [
-         "WD5",
-         [
-            "Claudia Xu",
-            "Erika Lai"
-         ],
-         [
-            "Sarah Gao",
-            "Fiona Chen"
-         ]
-      ],
-      "6": [
-         "MD4",
-         [
-            "Vo Ly",
-            "Brandon Leung"
-         ],
-         [
-            "Cameron Kato",
-            "Harsh Srivastav"
-         ]
-      ]
-   },
-   "01:30": {
-      "1": [
-         "WS2",
-         [
-            "Joy Yang"
-         ],
-         [
-            "Ashley Huang"
-         ]
-      ],
-      "2": [
-         "WS3",
-         [
-            "Kristine Ngo"
-         ],
-         [
-            "Rosamund Li"
-         ]
-      ],
-      "3": [
-         "MS6",
-         [
-            "Kyle Fang"
-         ],
-         [
-            "Brandon Wu"
-         ]
-      ],
-      "4": [
-         "MD10",
-         [
-            "Neil Patel",
-            "Andrew Yeow"
-         ],
-         [
-            "Arav Sachdeva",
-            "Aarav Singh"
-         ]
-      ],
-      "5": [
-         "MD6",
-         [
-            "Jonathan Li",
-            "Sean Tan"
-         ],
-         [
-            "Edwin Tang",
-            "Jonathon Cheng"
-         ]
-      ],
-      "6": [
-         "MD2",
-         [
-            "Leyang Ding",
-            "Robert Chang"
-         ],
-         [
-            "Ashton Lee",
-            "Vivan Sinha"
-         ]
-      ]
-   },
-   "02:15": {
-      "1": [
-         "MS5",
-         [
-            "Andrew Yeow"
-         ],
-         [
-            "Jackie Dai "
-         ]
-      ],
-      "2": [
-         "WD2",
-         [
-            "Claudia Xu",
-            "Erika Lai"
-         ],
-         [
-            "Ashley Huang",
-            "Kristin Song"
-         ]
-      ],
-      "3": [
-         "WD4",
-         [
-            "Julie La",
-            "Khanh Tran"
-         ],
-         [
-            "Eileen Pan",
-            "Alicia Wang"
-         ]
-      ],
-      "4": [
-         "MD8",
-         [
-            "Andy Li",
-            "Jason Wu"
-         ],
-         [
-            "Anton Luu",
-            "Justin Wang "
-         ]
-      ],
-      "5": [
-         "XD5",
-         [
-            "Aditi Kavipurapu",
-            "Ken Sibal"
-         ],
-         [
-            "Randy Huang",
-            "Rhea Zou"
-         ]
-      ],
-      "6": [
-         "MD7",
-         [
-            "Bill Wong",
-            "Donald Ly"
-         ],
-         [
-            "Evan Wang",
-            "Brandon Wu"
-         ]
-      ]
-   },
-   "03:00": {}
+   "UCB": {
+      "MD": {
+         "Rank 1": {
+            "Player Name": [
+               "Patrick Chi",
+               "Jason Arya"
+            ]
+         },
+         "Rank 2": {
+            "Player Name": [
+               "Ashley Huang",
+               "Natalie Chi"
+            ]
+         },
+         "Rank 3": {
+            "Player Name": [
+               "Aarav Rathi",
+               "Shengkai Jiang"
+            ]
+         },
+         "Rank 4": {
+            "Player Name": [
+               "Reanne Chan",
+               "Ariel Shan"
+            ]
+         },
+         "Rank 5": {
+            "Player Name": [
+               "Jonathan Pan",
+               "Harry Zhang"
+            ]
+         },
+         "Rank 6": {
+            "Player Name": [
+               "Kelsey Lin",
+               "Jansen Mok"
+            ]
+         },
+         "Rank 7": {
+            "Player Name": [
+               "Jonathan Pan",
+               "Jeff Chen"
+            ]
+         },
+         "Rank 8": {
+            "Player Name": [
+               "Arav Sachdeva",
+               "Arun Yadavalli"
+            ]
+         },
+         "Rank 9": {
+            "Player Name": [
+               "Kyle Huang",
+               "Khai Ho"
+            ]
+         },
+         "Rank 10": {
+            "Player Name": [
+               "Howard Huang",
+               "Cameron Kato"
+            ]
+         },
+         "Rank 11": {
+            "Player Name": [
+               "Zevin Bansal",
+               "Vinayak Prathikanti"
+            ]
+         },
+         "Rank 12": {
+            "Player Name": [
+               "Justin Wang",
+               "Anton Luu"
+            ]
+         },
+         "Rank 13": {
+            "Player Name": [
+               "Wesley Tan",
+               "Jansen Mok"
+            ]
+         }
+      },
+      "MS": {
+         "Rank 1": {
+            "Player Name": [
+               "Adam Tay"
+            ]
+         },
+         "Rank 2": {
+            "Player Name": [
+               "Brad Chiu"
+            ]
+         },
+         "Rank 3": {
+            "Player Name": [
+               "Brad Chiu"
+            ]
+         },
+         "Rank 4": {
+            "Player Name": [
+               "Zheng Zhou"
+            ]
+         },
+         "Rank 5": {
+            "Player Name": [
+               "Zheng Zhou"
+            ]
+         },
+         "Rank 6": {
+            "Player Name": [
+               "Jason Arya"
+            ]
+         },
+         "Rank 7": {
+            "Player Name": [
+               "Ryan Zhu"
+            ]
+         },
+         "Rank 8": {
+            "Player Name": [
+               "Ryan Zhu"
+            ]
+         },
+         "Rank 9": {
+            "Player Name": [
+               "Arun Yadavalli"
+            ]
+         },
+         "Rank 10": {
+            "Player Name": [
+               "Jake Kim"
+            ]
+         },
+         "Rank 11": {
+            "Player Name": [
+               "Arav Sachdeva"
+            ]
+         },
+         "Rank 12": {
+            "Player Name": [
+               "Khai Ho"
+            ]
+         },
+         "Rank 13": {
+            "Player Name": [
+               "Joon Choi"
+            ]
+         },
+         "Rank 14": {
+            "Player Name": [
+               "Jack Chu"
+            ]
+         },
+         "Rank 15": {
+            "Player Name": [
+               "Arion Togelang"
+            ]
+         },
+         "Rank 16": {
+            "Player Name": [
+               "Kwanghyun Kim"
+            ]
+         }
+      },
+      "XD": {
+         "Rank 1": {
+            "Player Name": [
+               "Adam Tay",
+               "Angie Huang"
+            ]
+         },
+         "Rank 2": {
+            "Player Name": [
+               "Patrick Chi",
+               "Natalie Chi"
+            ]
+         },
+         "Rank 3": {
+            "Player Name": [
+               "Ashton Lee",
+               "Ashley Huang"
+            ]
+         },
+         "Rank 4": {
+            "Player Name": [
+               "Patrick Chi",
+               "Kaylee Wang"
+            ]
+         },
+         "Rank 5": {
+            "Player Name": [
+               "Ashton Lee",
+               "Angie Huang"
+            ]
+         },
+         "Rank 6": {
+            "Player Name": [
+               "Shengkai Jiang",
+               "Kristin Song"
+            ]
+         },
+         "Rank 7": {
+            "Player Name": [
+               "Aarav Rathi",
+               "Jane Dong"
+            ]
+         },
+         "Rank 8": {
+            "Player Name": [
+               "Kelsey Lin",
+               "Trinity Nguyen"
+            ]
+         },
+         "Rank 9": {
+            "Player Name": [
+               "Howard Huang",
+               "Rosamund Li"
+            ]
+         },
+         "Rank 10": {
+            "Player Name": [
+               "Jeff Chen",
+               "Stephanie Kuang"
+            ]
+         },
+         "Rank 11": {
+            "Player Name": [
+               "Howie Liang",
+               "Angel Yeung"
+            ]
+         },
+         "Rank 12": {
+            "Player Name": [
+               "Vinayak Prathikanti",
+               "Caitlin Tong"
+            ]
+         },
+         "Rank 13": {
+            "Player Name": [
+               "Ajay Sharma",
+               "Zinong Wang"
+            ]
+         },
+         "Rank 14": {
+            "Player Name": [
+               "Haoran Qu",
+               "Janina Schieneman"
+            ]
+         }
+      },
+      "WS": {
+         "Rank 1": {
+            "Player Name": [
+               "Ziyi Huang"
+            ]
+         },
+         "Rank 2": {
+            "Player Name": [
+               "Emily Qian"
+            ]
+         },
+         "Rank 3": {
+            "Player Name": [
+               "Chaemin Lee"
+            ]
+         }
+      },
+      "WD": {
+         "Rank 1": {
+            "Player Name": [
+               "Reanne Chan",
+               "Ariel Shan"
+            ]
+         },
+         "Rank 2": {
+            "Player Name": [
+               "Kaylee Wang",
+               "Kristin Song"
+            ]
+         },
+         "Rank 3": {
+            "Player Name": [
+               "Clarissa Chen",
+               "Yuhe Lin"
+            ]
+         },
+         "Rank 4": {
+            "Player Name": [
+               "Angelina Wang",
+               "Janina Schieneman"
+            ]
+         },
+         "Rank 5": {
+            "Player Name": [
+               "Anni Zhang",
+               "Phoebe Shen"
+            ]
+         }
+      }
+   }
 }
 def conflictSwap(final_schedule, conflicts):
    print(conflicts)
@@ -509,6 +720,7 @@ def makeMeet(Meet):# for a MEET, not trimeet
       print("//PRIORITY COURTS = COURTS 1 -", priority_courts)
       prio_flag = True
    else:
+      priority_courts = 0
       print("Running program without priority courts.")
    #-- using the datetime package to be ale to transfer str to time, and do math with time.
 

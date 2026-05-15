@@ -3,42 +3,80 @@ import openpyxl
 from datetime import datetime, timedelta
 from pandas import DataFrame
 import random
+import os
 import sys
-import tty
-import termios
 
+# Windows
+if os.name == "nt":
+    import msvcrt
+
+# Mac/Linux
+else:
+    import tty
+    import termios
 
 BOLD = '\033[1m'
 END = '\033[0m'
-
 def get_key():
     """Get a single keypress from the user."""
-    fd = sys.stdin.fileno()
-    old_settings = termios.tcgetattr(fd)
-    try:
-        tty.setraw(sys.stdin.fileno())
-        ch = sys.stdin.read(1)
-        # Handle arrow keys (they send 3 characters)
-        if ch == '\x1b':
-            next_chars = sys.stdin.read(2)
-            if next_chars == '[A':
+
+    # WINDOWS
+    if os.name == "nt":
+        first = msvcrt.getch()
+
+        # Arrow keys are two-part sequences on Windows
+        if first in [b'\x00', b'\xe0']:
+            second = msvcrt.getch()
+
+            if second == b'H':
                 return 'UP'
-            elif next_chars == '[B':
+            elif second == b'P':
                 return 'DOWN'
-            return None
-        elif ch == '\r':  # Carriage return
+
+        elif first == b'\r':
             return 'ENTER'
-        elif ch == '\n':  # Newline
+
+        elif first == b' ':
             return 'ENTER'
-        elif ch == ' ':  # Spacebar as alternative
-            return 'ENTER'
-        elif ch == '\x03':  # Ctrl+C
+
+        elif first in [b'q', b'Q']:
             return 'QUIT'
-        elif ch == 'q' or ch == 'Q':  # Q to quit
+
+        elif first == b'\x03':
             return 'QUIT'
+
         return None
-    finally:
-        termios.tcsetattr(fd, termios.TCSADRAIN, old_settings)
+
+    # MAC / LINUX
+    else:
+        fd = sys.stdin.fileno()
+        old_settings = termios.tcgetattr(fd)
+
+        try:
+            tty.setraw(sys.stdin.fileno())
+            ch = sys.stdin.read(1)
+
+            if ch == '\x1b':
+                next_chars = sys.stdin.read(2)
+
+                if next_chars == '[A':
+                    return 'UP'
+                elif next_chars == '[B':
+                    return 'DOWN'
+
+            elif ch in ['\r', '\n', ' ']:
+                return 'ENTER'
+
+            elif ch in ['q', 'Q']:
+                return 'QUIT'
+
+            elif ch == '\x03':
+                return 'QUIT'
+
+            return None
+
+        finally:
+            termios.tcsetattr(fd, termios.TCSADRAIN, old_settings)
 
 # -> addEvent(Meet), add md, ms, xd, ws, and wd events to the algorithm.
 def addEvent(Meet): 

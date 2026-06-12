@@ -2,6 +2,17 @@
 
 A scheduling tool for collegiate badminton dual meets (2 teams), built by Richard Huang for the Badminton Club @ UC Davis. Give it two team rosters, your court count, and your time window — it generates a randomized, conflict-aware match schedule and exports it as a polished, scorekeeping-ready Excel sheet. If there is a need to schedule a Tri-Meet(3 team tournament), visit the [Badminton Trimeet Calculator](https://github.com/Sakidoe/Badminton-TriMeet-Calculator) Repo fully schedule an operational Tri-team meet.
 
+## Input/ Output
+
+Simply by putting in team rosters that are in .xlsx files aligned with this example:
+<img width="328" height="964" alt="image" src="https://github.com/user-attachments/assets/4393cdc5-6fc7-4a13-801b-b507a6cc465c" />
+And by configuring parameters, such as Time per match, Time range of Tournament, court numbers, and priority courts for top games, you can create an output .xlsx schedule, that is programmable and pre-formatted to track who wins games, and which matches should be played on what court.
+<img width="1411" height="902" alt="image" src="https://github.com/user-attachments/assets/60f14216-c3e5-4754-80f4-a78ddeeba145" />
+
+## Inspiration
+
+Creating a meet schedule by hand, with rosters that could have 50+ players in each team can take 3+ hours, and includes a method of studying teams to see who has the most number of games, and assorting them in a certain fashion. This method was difficult to teach and implement flawlessly, so instead, beginning in 2022, I built this program as a replacement. The result is a robust and flawless program that works with data structures, Python, and algorithmic logic to merge two rosters, create a schedule, and check for conflicts all in < 5 minutes.
+
 ## What It Does
 
 Running a dual meet means scheduling dozens of matches across five events — Men's Singles (MS), Men's Doubles (MD), Women's Singles (WS), Women's Doubles (WD), and Mixed Doubles (XD) — *without double-booking players* who compete in multiple events. This tool automates that:

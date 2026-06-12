@@ -1,32 +1,55 @@
-# Badminton_Meet_Calculator
-  This is a university badminton meet calculator that creates an interactive .XLSX file from parameters and team rosters inputted by the user, by Richard Huang.
-# Instructions
-# Initial Comments :
-  This program only requires save.txt, schedule.txt, app.py, and result.xlsx. Json_Team_Parser.py is only useful for creating rosters, Json_Schedule_Parser.py
-  is only useful for making schedule.txt from an inputted json file, and XLSX_Parser.py creates a result.txt from an inputted json files, as backups for app.py.
-# 1.
-  Replace the ucd.xlsx and ucsc.xlsx with the team rosters of the schools, in a format in the form of something like this and rename the files:
-  ![image](https://github.com/Sakidoe/Badminton_Meet_Calculator/assets/114327608/a7b267f5-6bc4-4611-94c2-c8b3d9a95b0e)
+# Badminton Meet Calculator
 
-# 2
-  Run app.py through an application such as VSC, after installing python, and the relevant extensions; json, openpyxl, datetime, pandas, random, xlsxwriter.
-  You can do this by running pip3 install [extension] in your terminal.
+A scheduling tool for collegiate badminton dual meets (2 teams), built by Richard Huang for the Badminton Club @ UC Davis. Give it two team rosters, your court count, and your time window — it generates a randomized, conflict-aware match schedule and exports it as a polished, scorekeeping-ready Excel sheet. If there is a need to schedule a Tri-Meet(3 team tournament), visit the [Badminton Trimeet Calculator](https://github.com/Sakidoe/Badminton-TriMeet-Calculator) Repo fully schedule an operational Tri-team meet.
 
-# 3
-  The program will begin by asking you basic questions about the meet, namely the team number(which will only work at 2 currently), and team names. It
-  will then prompt a menu, for where you can press A to begin adding team rosters. This program is not caps sensitive. 
-  ![image](https://github.com/Sakidoe/Badminton_Meet_Calculator/assets/114327608/46fae821-24b0-4c02-894b-48647441f2d9)
+## What It Does
 
-# 4
-  After adding the rosters, press s to save the rosters in json format in save.txt. Double check that all the players are correct.
-  ![image](https://github.com/Sakidoe/Badminton_Meet_Calculator/assets/114327608/310be6c9-818e-4d1f-8ef6-afb3d5167798)
+Running a dual meet means scheduling dozens of matches across five events — Men's Singles (MS), Men's Doubles (MD), Women's Singles (WS), Women's Doubles (WD), and Mixed Doubles (XD) — *without double-booking players* who compete in multiple events. This tool automates that:
 
-# 5
-  Press M to make the meet, and following the prompts to add court numbers, time of event, match duration, and priority courts, it will make a meet schedule
-  in json format and produce it in schedule.txt.
-  ![image](https://github.com/Sakidoe/Badminton_Meet_Calculator/assets/114327608/8402500d-cd18-439a-9f33-284ad4834d17)
+- **Reads rosters directly from Excel** — each team submits a simple ranked lineup sheet
+- **Validates feasibility** — checks that your courts × time window can actually fit every required match before scheduling
+- **Avoids player conflicts** — won't schedule a player on two courts in the same timeslot, and flags unavoidable conflicts when they occur
+- **Supports priority courts** — reserve your best courts (1–3) for top-seeded matchups
+- **Exports a formatted Excel scoresheet** — color-coded schedule with per-match score entry, plus live A-Team and Overall tally formulas so the running team score updates as results come in
+- **Audits the final schedule** — a standalone checker reports same-timeslot conflicts and back-to-back matches, with suggested alternative slots
 
-  
-# 6
-  Press E to export the json formatted schedule into result.xlsx, which will complete your meet!
-  ![image](https://github.com/Sakidoe/Badminton_Meet_Calculator/assets/114327608/a10edcfc-3624-4eb1-88cc-9f65bddaf7b2)
+## Tech Stack
+
+**Language:** Python 3
+
+| Library | Role |
+|---|---|
+| `openpyxl` | Reads team roster `.xlsx` files |
+| `xlsxwriter` | Generates the formatted `result.xlsx` scoresheet (merged cells, color formats, SUM formulas) |
+| `pandas` | Tabular data handling |
+| `json` | Roster and schedule serialization (`save.txt`, `schedule.txt`) |
+| `datetime` | Time-window math and timeslot generation |
+| `random` | Match/rank selection during schedule generation |
+| `msvcrt` / `termios` + `tty` (built-in) | Cross-platform arrow-key navigation for the interactive terminal menu |
+
+Install dependencies:
+```bash
+pip3 install openpyxl xlsxwriter pandas
+```
+
+## How to Run
+
+The pipeline runs in four stages, each feeding the next automatically:
+
+**1. `Json_Team_Parser.py` — build the rosters.**
+Prepare each team's roster as an `.xlsx` file: event headers (`MD`, `MS`, `XD`, `WS`, `WD`) followed by rank numbers and player names. Run the script, enter both team names, then use the arrow-key menu: **Add Roster** (`A`) for each team (you'll be prompted for the roster filename), then **Save** (`S`). Output: `save.txt` — both rosters in JSON.
+
+**2. `Json_Schedule_Parser.py` — generate the schedule.**
+Run it — it loads the rosters from `save.txt` automatically. Enter the time per game cycle, meet start/end times (24-hour format), number of courts, and optional priority courts. The script verifies the meet fits the time window, then builds a randomized conflict-aware schedule. Output: `schedule.txt`.
+
+**3. `XLSX_Parser.py` — export to Excel.**
+Run it — it loads `schedule.txt` and the team names automatically. Output: `result.xlsx`, the formatted meet scoresheet with score columns and automatic team tallies.
+
+**4. `conflict_checker.py` — verify.**
+Run it and enter `schedule.txt` when prompted. It reports same-timeslot conflicts and back-to-back matches, with suggested timeslot moves for each.
+
+## Notes
+
+- Designed for exactly **two teams** per meet.
+- Run all scripts from the project folder so they can find `save.txt` and `schedule.txt`.
+- Roster format reference: see `ucd.xlsx` / `ucsc.xlsx` in this repo.

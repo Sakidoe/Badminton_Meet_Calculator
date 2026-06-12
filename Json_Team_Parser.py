@@ -20,7 +20,7 @@ END = '\033[0m'
 def get_key():
     """Get a single keypress from the user."""
 
-    # WINDOWS
+    # windows
     if os.name == "nt":
         first = msvcrt.getch()
 
@@ -47,7 +47,7 @@ def get_key():
 
         return None
 
-    # MAC / LINUX
+    # mac
     else:
         fd = sys.stdin.fileno()
         old_settings = termios.tcgetattr(fd)

@@ -1,23 +1,23 @@
 {
    "10:00": {
       "1": [
-         "WD1",
+         "WS3",
          [
-            "Xin Huang",
-            "Betty Yang"
+            "Chonticha Phanphanit"
          ],
          [
-            "Reanne Chan",
-            "Ariel Shan"
+            "Chaemin Lee"
          ]
       ],
       "2": [
-         "MS1",
+         "MD7",
          [
-            "Leyang Ding"
+            "Aaron Lim",
+            "Bill Wong"
          ],
          [
-            "Adam Tay"
+            "Jonathan Pan",
+            "Jeff Chen"
          ]
       ],
       "3": [
@@ -30,6 +30,15 @@
          ]
       ],
       "4": [
+         "WS2",
+         [
+            "Carolyn Suryapermana"
+         ],
+         [
+            "Emily Qian"
+         ]
+      ],
+      "5": [
          "WD5",
          [
             "Winnie Wu",
@@ -40,124 +49,27 @@
             "Phoebe Shen"
          ]
       ],
-      "5": [
-         "WS2",
-         [
-            "Carolyn Suryapermana"
-         ],
-         [
-            "Emily Qian"
-         ]
-      ],
       "6": [
-         "MD6",
+         "MS11",
          [
-            "Sean Tan",
-            "Kevin Cuan"
+            "Adrian Li"
          ],
          [
-            "Kelsey Lin",
-            "Jansen Mok"
+            "Arav Sachdeva"
          ]
       ]
    },
-   "10:45": {
+   "10:30": {
       "1": [
-         "WD2",
+         "MS16",
          [
-            "Kristine Ngo",
-            "Erika Lai"
+            "Booker Brown"
          ],
          [
-            "Kaylee Wang",
-            "Kristin Song"
+            "Kwanghyun Kim"
          ]
       ],
       "2": [
-         "MS4",
-         [
-            "Geoffray Lee"
-         ],
-         [
-            "Zheng Zhou"
-         ]
-      ],
-      "3": [
-         "WS3",
-         [
-            "Chonticha Phanphanit"
-         ],
-         [
-            "Chaemin Lee"
-         ]
-      ],
-      "4": [
-         "WD3",
-         [
-            "Muyen Liang",
-            "Jamie Yip"
-         ],
-         [
-            "Clarissa Chen",
-            "Yuhe Lin"
-         ]
-      ],
-      "5": [
-         "MD3",
-         [
-            "Jon Moser",
-            "Jonathan Li"
-         ],
-         [
-            "Aarav Rathi",
-            "Shengkai Jiang"
-         ]
-      ],
-      "6": [
-         "MD11",
-         [
-            "Ryan Lei",
-            "Adrian Luu"
-         ],
-         [
-            "Zevin Bansal",
-            "Vinayak Prathikanti"
-         ]
-      ]
-   },
-   "11:30": {
-      "1": [
-         "MD4",
-         [
-            "Sidney Wang",
-            "Adrian Luo"
-         ],
-         [
-            "Reanne Chan",
-            "Ariel Shan"
-         ]
-      ],
-      "2": [
-         "XD8",
-         [
-            "Ryan Lei",
-            "Jamie Yip"
-         ],
-         [
-            "Kelsey Lin",
-            "Trinity Nguyen"
-         ]
-      ],
-      "3": [
-         "MS8",
-         [
-            "Jonathan Li"
-         ],
-         [
-            "Ryan Zhu"
-         ]
-      ],
-      "4": [
          "MD9",
          [
             "Jordon Kwong",
@@ -168,315 +80,13 @@
             "Khai Ho"
          ]
       ],
-      "5": [
-         "XD9",
-         [
-            "Adrian Li",
-            "Isabella Li"
-         ],
-         [
-            "Howard Huang",
-            "Rosamund Li"
-         ]
-      ],
-      "6": [
-         "MD1",
-         [
-            "Leyang Ding",
-            "Richard Huang"
-         ],
-         [
-            "Patrick Chi",
-            "Jason Arya"
-         ]
-      ]
-   },
-   "12:15": {
-      "1": [
-         "XD10",
-         [
-            "Richard Huang",
-            "Livia Rice"
-         ],
-         [
-            "Jeff Chen",
-            "Stephanie Kuang"
-         ]
-      ],
-      "2": [
-         "MD13",
-         [
-            "Marc Ethan Saguiped",
-            "Donnovan Saelee"
-         ],
-         [
-            "Wesley Tan",
-            "Jansen Mok"
-         ]
-      ],
       "3": [
-         "MS14",
-         [
-            "Bill Wong"
-         ],
-         [
-            "Jack Chu"
-         ]
-      ],
-      "4": [
-         "MS11",
-         [
-            "Adrian Li"
-         ],
-         [
-            "Arav Sachdeva"
-         ]
-      ],
-      "5": [
-         "MD2",
-         [
-            "Benson Ngai",
-            "Geoffray Lee"
-         ],
-         [
-            "Ashley Huang",
-            "Natalie Chi"
-         ]
-      ],
-      "6": [
-         "XD14",
-         [
-            "Jerry Qiu",
-            "Suhani Shokeen"
-         ],
-         [
-            "Haoran Qu",
-            "Janina Schieneman"
-         ]
-      ]
-   },
-   "01:00": {
-      "1": [
-         "MD5",
-         [
-            "Mariano Elizondo",
-            "Jerry Qiu"
-         ],
-         [
-            "Jonathan Pan",
-            "Harry Zhang"
-         ]
-      ],
-      "2": [
          "MS15",
          [
             "Finn"
          ],
          [
             "Arion Togelang"
-         ]
-      ],
-      "3": [
-         "XD11",
-         [
-            "Aaron Lim",
-            "Gaby Solei"
-         ],
-         [
-            "Howie Liang",
-            "Angel Yeung"
-         ]
-      ],
-      "4": [
-         "MS6",
-         [
-            "Adrian Luo"
-         ],
-         [
-            "Jason Arya"
-         ]
-      ],
-      "5": [
-         "XD13",
-         [
-            "Booker Brown",
-            "Chonticha Phanphanit"
-         ],
-         [
-            "Ajay Sharma",
-            "Zinong Wang"
-         ]
-      ],
-      "6": [
-         "XD2",
-         [
-            "Benson Ngai",
-            "Kristine Ngo"
-         ],
-         [
-            "Patrick Chi",
-            "Natalie Chi"
-         ]
-      ]
-   },
-   "01:45": {
-      "1": [
-         "XD7",
-         [
-            "Jonathan Li",
-            "Ehong Ng"
-         ],
-         [
-            "Aarav Rathi",
-            "Jane Dong"
-         ]
-      ],
-      "2": [
-         "MS16",
-         [
-            "Booker Brown"
-         ],
-         [
-            "Kwanghyun Kim"
-         ]
-      ],
-      "3": [
-         "XD12",
-         [
-            "Daniel Lin",
-            "Carolyn Surypermana"
-         ],
-         [
-            "Vinayak Prathikanti",
-            "Caitlin Tong"
-         ]
-      ],
-      "4": [
-         "MD12",
-         [
-            "Josh Luo",
-            "Karthik Villavan"
-         ],
-         [
-            "Justin Wang",
-            "Anton Luu"
-         ]
-      ],
-      "5": [
-         "WD4",
-         [
-            "Livia Rice",
-            "Isabella Li"
-         ],
-         [
-            "Angelina Wang",
-            "Janina Schieneman"
-         ]
-      ],
-      "6": [
-         "MS13",
-         [
-            "Michael Salim"
-         ],
-         [
-            "Joon Choi"
-         ]
-      ]
-   },
-   "02:30": {
-      "1": [
-         "MD7",
-         [
-            "Aaron Lim",
-            "Bill Wong"
-         ],
-         [
-            "Jonathan Pan",
-            "Jeff Chen"
-         ]
-      ],
-      "2": [
-         "XD6",
-         [
-            "Adam Dinh",
-            "Minh Nguyen"
-         ],
-         [
-            "Shengkai Jiang",
-            "Kristin Song"
-         ]
-      ],
-      "3": [
-         "XD3",
-         [
-            "Kevin Cuan",
-            "Iris Lee"
-         ],
-         [
-            "Ashton Lee",
-            "Ashley Huang"
-         ]
-      ],
-      "4": [
-         "XD4",
-         [
-            "Richard Huang",
-            "Erika Lai"
-         ],
-         [
-            "Patrick Chi",
-            "Kaylee Wang"
-         ]
-      ],
-      "5": [
-         "MD8",
-         [
-            "Daniel Lin",
-            "Yawei He"
-         ],
-         [
-            "Arav Sachdeva",
-            "Arun Yadavalli"
-         ]
-      ],
-      "6": [
-         "MD10",
-         [
-            "Michael Salim",
-            "Kyle Kimura"
-         ],
-         [
-            "Howard Huang",
-            "Cameron Kato"
-         ]
-      ]
-   },
-   "03:15": {
-      "1": [
-         "MS7",
-         [
-            "Sidney Wang"
-         ],
-         [
-            "Ryan Zhu"
-         ]
-      ],
-      "2": [
-         "MS10",
-         [
-            "Aaron Lim"
-         ],
-         [
-            "Jake Kim"
-         ]
-      ],
-      "3": [
-         "MS5",
-         [
-            "Jon Moser"
-         ],
-         [
-            "Zheng Zhou"
          ]
       ],
       "4": [
@@ -491,6 +101,189 @@
          ]
       ],
       "5": [
+         "MD8",
+         [
+            "Daniel Lin",
+            "Yawei He"
+         ],
+         [
+            "Arav Sachdeva",
+            "Arun Yadavalli"
+         ]
+      ],
+      "6": [
+         "WD3",
+         [
+            "Muyen Liang",
+            "Jamie Yip"
+         ],
+         [
+            "Clarissa Chen",
+            "Yuhe Lin"
+         ]
+      ]
+   },
+   "11:00": {
+      "1": [
+         "MD10",
+         [
+            "Michael Salim",
+            "Kyle Kimura"
+         ],
+         [
+            "Howard Huang",
+            "Cameron Kato"
+         ]
+      ],
+      "2": [
+         "XD7",
+         [
+            "Jonathan Li",
+            "Ehong Ng"
+         ],
+         [
+            "Aarav Rathi",
+            "Jane Dong"
+         ]
+      ],
+      "3": [
+         "MS1",
+         [
+            "Leyang Ding"
+         ],
+         [
+            "Adam Tay"
+         ]
+      ],
+      "4": [
+         "MD11",
+         [
+            "Ryan Lei",
+            "Adrian Luu"
+         ],
+         [
+            "Zevin Bansal",
+            "Vinayak Prathikanti"
+         ]
+      ],
+      "5": [
+         "MD13",
+         [
+            "Marc Ethan Saguiped",
+            "Donnovan Saelee"
+         ],
+         [
+            "Wesley Tan",
+            "Jansen Mok"
+         ]
+      ],
+      "6": [
+         "MS5",
+         [
+            "Jon Moser"
+         ],
+         [
+            "Zheng Zhou"
+         ]
+      ]
+   },
+   "11:30": {
+      "1": [
+         "WD1",
+         [
+            "Xin Huang",
+            "Betty Yang"
+         ],
+         [
+            "Reanne Chan",
+            "Ariel Shan"
+         ]
+      ],
+      "2": [
+         "WD2",
+         [
+            "Kristine Ngo",
+            "Erika Lai"
+         ],
+         [
+            "Kaylee Wang",
+            "Kristin Song"
+         ]
+      ],
+      "3": [
+         "XD10",
+         [
+            "Richard Huang",
+            "Livia Rice"
+         ],
+         [
+            "Jeff Chen",
+            "Stephanie Kuang"
+         ]
+      ],
+      "4": [
+         "MS13",
+         [
+            "Michael Salim"
+         ],
+         [
+            "Joon Choi"
+         ]
+      ],
+      "5": [
+         "XD9",
+         [
+            "Adrian Li",
+            "Isabella Li"
+         ],
+         [
+            "Howard Huang",
+            "Rosamund Li"
+         ]
+      ],
+      "6": [
+         "MS12",
+         [
+            "Kyle Kimura"
+         ],
+         [
+            "Khai Ho"
+         ]
+      ]
+   },
+   "12:00": {
+      "1": [
+         "MS14",
+         [
+            "Bill Wong"
+         ],
+         [
+            "Jack Chu"
+         ]
+      ],
+      "2": [
+         "WD4",
+         [
+            "Livia Rice",
+            "Isabella Li"
+         ],
+         [
+            "Angelina Wang",
+            "Janina Schieneman"
+         ]
+      ],
+      "3": [
+         "XD4",
+         [
+            "Richard Huang",
+            "Erika Lai"
+         ],
+         [
+            "Patrick Chi",
+            "Kaylee Wang"
+         ]
+      ],
+      "4": [
          "MS3",
          [
             "Mariano Elizondo"
@@ -499,24 +292,37 @@
             "Brad Chiu"
          ]
       ],
-      "6": [
-         "MS9",
+      "5": [
+         "MD6",
          [
-            "Sean Tan"
+            "Sean Tan",
+            "Kevin Cuan"
          ],
          [
-            "Arun Yadavalli"
+            "Kelsey Lin",
+            "Jansen Mok"
+         ]
+      ],
+      "6": [
+         "MS7",
+         [
+            "Sidney Wang"
+         ],
+         [
+            "Ryan Zhu"
          ]
       ]
    },
-   "04:00": {
+   "12:30": {
       "1": [
-         "MS12",
+         "XD14",
          [
-            "Kyle Kimura"
+            "Jerry Qiu",
+            "Suhani Shokeen"
          ],
          [
-            "Khai Ho"
+            "Haoran Qu",
+            "Janina Schieneman"
          ]
       ],
       "2": [
@@ -529,6 +335,147 @@
          ]
       ],
       "3": [
+         "XD6",
+         [
+            "Adam Dinh",
+            "Minh Nguyen"
+         ],
+         [
+            "Shengkai Jiang",
+            "Kristin Song"
+         ]
+      ],
+      "4": [
+         "MD1",
+         [
+            "Leyang Ding",
+            "Richard Huang"
+         ],
+         [
+            "Patrick Chi",
+            "Jason Arya"
+         ]
+      ],
+      "5": [
+         "MS8",
+         [
+            "Jonathan Li"
+         ],
+         [
+            "Ryan Zhu"
+         ]
+      ],
+      "6": [
+         "MS10",
+         [
+            "Aaron Lim"
+         ],
+         [
+            "Jake Kim"
+         ]
+      ]
+   },
+   "01:00": {
+      "1": [
+         "XD13",
+         [
+            "Booker Brown",
+            "Chonticha Phanphanit"
+         ],
+         [
+            "Ajay Sharma",
+            "Zinong Wang"
+         ]
+      ],
+      "2": [
+         "XD3",
+         [
+            "Kevin Cuan",
+            "Iris Lee"
+         ],
+         [
+            "Ashton Lee",
+            "Ashley Huang"
+         ]
+      ],
+      "3": [
+         "MD3",
+         [
+            "Jon Moser",
+            "Jonathan Li"
+         ],
+         [
+            "Aarav Rathi",
+            "Shengkai Jiang"
+         ]
+      ],
+      "4": [
+         "XD11",
+         [
+            "Aaron Lim",
+            "Gaby Solei"
+         ],
+         [
+            "Howie Liang",
+            "Angel Yeung"
+         ]
+      ],
+      "5": [
+         "MD5",
+         [
+            "Mariano Elizondo",
+            "Jerry Qiu"
+         ],
+         [
+            "Jonathan Pan",
+            "Harry Zhang"
+         ]
+      ],
+      "6": [
+         "XD2",
+         [
+            "Benson Ngai",
+            "Kristine Ngo"
+         ],
+         [
+            "Patrick Chi",
+            "Natalie Chi"
+         ]
+      ]
+   },
+   "01:30": {
+      "1": [
+         "MD4",
+         [
+            "Sidney Wang",
+            "Adrian Luo"
+         ],
+         [
+            "Reanne Chan",
+            "Ariel Shan"
+         ]
+      ],
+      "2": [
+         "MS9",
+         [
+            "Sean Tan"
+         ],
+         [
+            "Arun Yadavalli"
+         ]
+      ],
+      "3": [
+         "MD2",
+         [
+            "Benson Ngai",
+            "Geoffray Lee"
+         ],
+         [
+            "Ashley Huang",
+            "Natalie Chi"
+         ]
+      ],
+      "4": [
          "XD5",
          [
             "Sidney Wang",
@@ -538,6 +485,66 @@
             "Ashton Lee",
             "Angie Huang"
          ]
+      ],
+      "5": [
+         "XD12",
+         [
+            "Daniel Lin",
+            "Carolyn Surypermana"
+         ],
+         [
+            "Vinayak Prathikanti",
+            "Caitlin Tong"
+         ]
+      ],
+      "6": [
+         "MD12",
+         [
+            "Josh Luo",
+            "Karthik Villavan"
+         ],
+         [
+            "Justin Wang",
+            "Anton Luu"
+         ]
       ]
-   }
+   },
+   "02:00": {
+      "1": [
+         "XD8",
+         [
+            "Ryan Lei",
+            "Jamie Yip"
+         ],
+         [
+            "Kelsey Lin",
+            "Trinity Nguyen"
+         ]
+      ],
+      "2": [
+         "MS4",
+         [
+            "Geoffray Lee"
+         ],
+         [
+            "Zheng Zhou"
+         ]
+      ],
+      "3": [
+         "MS6",
+         [
+            "Adrian Luo"
+         ],
+         [
+            "Jason Arya"
+         ]
+      ]
+   },
+   "02:30": {},
+   "03:00": {},
+   "03:30": {},
+   "04:00": {},
+   "04:30": {},
+   "05:00": {},
+   "05:30": {}
 }

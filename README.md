@@ -5,8 +5,11 @@ A scheduling tool for collegiate badminton dual meets (2 teams), built by Richar
 ## Input/ Output
 
 Simply by putting in team rosters that are in .xlsx files aligned with this example:
+
 <img width="328" height="964" alt="image" src="https://github.com/user-attachments/assets/4393cdc5-6fc7-4a13-801b-b507a6cc465c" />
+
 And by configuring parameters, such as Time per match, Time range of Tournament, court numbers, and priority courts for top games, you can create an output .xlsx schedule, that is programmable and pre-formatted to track who wins games, and which matches should be played on what court.
+
 <img width="1411" height="902" alt="image" src="https://github.com/user-attachments/assets/60f14216-c3e5-4754-80f4-a78ddeeba145" />
 
 ## Inspiration
